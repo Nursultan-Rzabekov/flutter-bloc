@@ -7,7 +7,7 @@ import 'package:flutter_learn_bloc/cubit/user_cubit.dart';
 class UsersList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<UserCubit, UserState>(builder: (context, state) {
+    return BlocBuilder<UserBloc, UserState>(builder: (context, state) {
       if (state is UserEmptyState) {
         return Center(
           child: Text(
